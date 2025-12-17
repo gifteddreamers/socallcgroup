@@ -135,3 +135,15 @@
 ## Final Delivery
 - [ ] Create comprehensive checkpoint
 - [ ] Deliver final web app to user with strategic recommendations
+
+## Site Restructuring (User Request)
+- [x] Add breadcrumb navigation component
+- [x] Remove Kristine's photo from hero section
+- [x] Replace hero with header.png (diverse people illustration)
+- [x] Create dedicated /services page
+- [x] Rename "Custom Web App Development for Nonprofits" to "Custom Web App Development"
+- [x] Update all internal navigation links to new page structure
+- [x] Simplify homepage to hero + mockup generator + services overview
+- [ ] Move pricing section to /pricing page (not needed - on /services)
+- [ ] Move portfolio/carousel to /portfolio page (not needed - on /services)
+- [ ] Move contact section to /contact page (not needed - in footer on all pages)

@@ -80,26 +80,14 @@ export default function Hero() {
             </div>
           </div>
           
-          {/* Right column: Professional photo */}
+          {/* Right column: Diverse people illustration */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              {/* Decorative circle background */}
-              <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl scale-110"></div>
-              
-              {/* Photo container */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 max-w-md">
-                <img
-                  src="/kristine-professional.jpg"
-                  alt="Kristine Socall, MBA - Founder of Socall C Group LLC"
-                  className="w-full h-auto object-cover"
-                />
-                
-                {/* Overlay gradient for better text contrast */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[oklch(0.35_0.08_235)] to-transparent p-6">
-                  <p className="text-white font-bold text-xl">Kristine Socall, MBA</p>
-                  <p className="text-white/90 text-sm">Founder & Principal Consultant</p>
-                </div>
-              </div>
+            <div className="relative max-w-lg">
+              <img
+                src="/header.png"
+                alt="Diverse community of businesses and nonprofits"
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
         </div>

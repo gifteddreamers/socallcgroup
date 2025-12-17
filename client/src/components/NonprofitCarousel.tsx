@@ -111,10 +111,10 @@ export default function NonprofitCarousel() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-[oklch(0.51_0.12_230)] mb-6">
-            Custom Web App Development for Nonprofits
+            Custom Web App Development
           </h2>
           <p className="text-lg text-muted-foreground mb-4">
-            Technology Solutions for Nonprofits Powered for People
+            Technology Solutions Powered for People
           </p>
           <p className="text-base text-foreground">
             We build specialized web applications designed for nonprofit workflows—from triage to service delivery.

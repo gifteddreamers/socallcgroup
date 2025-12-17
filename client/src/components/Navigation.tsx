@@ -32,11 +32,11 @@ export default function Navigation() {
   };
 
   const navLinks = [
-    { label: "Services", href: "#services" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Portfolio", href: "#portfolio" },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "Services", href: "/services", isRoute: true },
+    { label: "Pricing", href: "#pricing", isRoute: false },
+    { label: "Portfolio", href: "#portfolio", isRoute: false },
+    { label: "About", href: "#about", isRoute: false },
+    { label: "Contact", href: "#contact", isRoute: false },
   ];
 
   return (
@@ -55,13 +55,23 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <button
-                key={link.label}
-                onClick={() => scrollToSection(link.href.substring(1))}
-                className="text-sm font-medium text-foreground hover:text-[oklch(0.51_0.12_230)] transition-colors"
-              >
-                {link.label}
-              </button>
+              link.isRoute ? (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="text-sm font-medium text-foreground hover:text-[oklch(0.51_0.12_230)] transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <button
+                  key={link.label}
+                  onClick={() => scrollToSection(link.href.substring(1))}
+                  className="text-sm font-medium text-foreground hover:text-[oklch(0.51_0.12_230)] transition-colors"
+                >
+                  {link.label}
+                </button>
+              )
             ))}
           </div>
 
@@ -109,13 +119,24 @@ export default function Navigation() {
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-border py-4 space-y-4">
             {navLinks.map((link) => (
-              <button
-                key={link.label}
-                onClick={() => scrollToSection(link.href.substring(1))}
-                className="block w-full text-left px-4 py-2 text-sm font-medium text-foreground hover:text-[oklch(0.51_0.12_230)] hover:bg-secondary rounded-lg transition-colors"
-              >
-                {link.label}
-              </button>
+              link.isRoute ? (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block w-full text-left px-4 py-2 text-sm font-medium text-foreground hover:text-[oklch(0.51_0.12_230)] hover:bg-secondary rounded-lg transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <button
+                  key={link.label}
+                  onClick={() => scrollToSection(link.href.substring(1))}
+                  className="block w-full text-left px-4 py-2 text-sm font-medium text-foreground hover:text-[oklch(0.51_0.12_230)] hover:bg-secondary rounded-lg transition-colors"
+                >
+                  {link.label}
+                </button>
+              )
             ))}
             <div className="px-4 pt-4 border-t border-border space-y-3">
               {isAuthenticated ? (

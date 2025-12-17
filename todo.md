@@ -147,3 +147,7 @@
 - [ ] Move pricing section to /pricing page (not needed - on /services)
 - [ ] Move portfolio/carousel to /portfolio page (not needed - on /services)
 - [ ] Move contact section to /contact page (not needed - in footer on all pages)
+
+## Hero Section Cleanup (User Request)
+- [x] Remove "Converged at the Intersection of Impact & Sustainability" line
+- [x] Remove "Led by Founder Kristine Socall, MBA" line

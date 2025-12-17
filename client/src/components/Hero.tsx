@@ -25,17 +25,11 @@ export default function Hero() {
               <p className="text-xl md:text-2xl font-medium text-white/90">
                 Powered by People. Scaled with Technology.
               </p>
-              <p className="text-lg md:text-xl text-white/80">
-                Converged at the Intersection of Impact & Sustainability
-              </p>
             </div>
             
             <div className="space-y-3">
               <p className="text-lg font-semibold text-white/95">
                 Strategic Consulting, Full-cycle Accounting, Custom Web App Development & AI Workflows
-              </p>
-              <p className="text-base text-white/85">
-                Led by Founder <span className="font-bold">Kristine Socall, MBA</span>
               </p>
               <p className="text-base text-white/85">
                 Bringing <span className="font-bold">25+ years</span> big-firm expertise to independent businesses and nonprofits

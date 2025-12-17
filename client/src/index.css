@@ -42,40 +42,69 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+/* Ocean Trust Theme - Professional Financial Consulting & Web Development */
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
+  /* Primary Blue #1B7BA8 - Main headings, CTAs, tier headers */
+  --primary: oklch(0.51 0.12 230);
+  --primary-foreground: oklch(1 0 0);
+  
+  /* Accent Cyan #45B9DE - Secondary CTAs, hover states, accent lines */
+  --accent: oklch(0.72 0.11 215);
+  --accent-foreground: oklch(0.20 0.02 230);
+  
+  /* Dark Blue #0D4E6B - Testimonials background, section dividers */
+  --dark-blue: oklch(0.35 0.08 235);
+  --dark-blue-foreground: oklch(1 0 0);
+  
+  /* Light Blue #E8F4F8 - Pricing card backgrounds, FAQ sections */
+  --light-blue: oklch(0.96 0.02 215);
+  --light-blue-foreground: oklch(0.25 0.03 230);
+  
+  /* Gray #6B7280 - Secondary text */
+  --gray: oklch(0.55 0.01 260);
+  
+  /* Success Green #10B981 - Confirmations */
+  --success: oklch(0.68 0.15 160);
+  --success-foreground: oklch(1 0 0);
+  
+  /* Warning Orange #F59E0B - Urgent CTAs */
+  --warning: oklch(0.75 0.15 70);
+  --warning-foreground: oklch(0.20 0.02 230);
+  
+  /* Semantic color mappings */
   --radius: 0.65rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
+  --foreground: oklch(0.25 0.03 230);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
+  --card-foreground: oklch(0.25 0.03 230);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  --popover-foreground: oklch(0.25 0.03 230);
+  --secondary: oklch(0.96 0.02 215);
+  --secondary-foreground: oklch(0.25 0.03 230);
+  --muted: oklch(0.96 0.02 215);
+  --muted-foreground: oklch(0.55 0.04 230);
+  --destructive: oklch(0.60 0.20 25);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.90 0.01 215);
+  --input: oklch(0.90 0.01 215);
+  --ring: oklch(0.51 0.12 230);
+  
+  /* Sidebar colors (for dashboard layout) */
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.25 0.03 230);
+  --sidebar-primary: oklch(0.51 0.12 230);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.96 0.02 215);
+  --sidebar-accent-foreground: oklch(0.25 0.03 230);
+  --sidebar-border: oklch(0.90 0.01 215);
+  --sidebar-ring: oklch(0.51 0.12 230);
+  
+  /* Chart colors for financial dashboards */
+  --chart-1: oklch(0.51 0.12 230);
+  --chart-2: oklch(0.72 0.11 215);
+  --chart-3: oklch(0.35 0.08 235);
+  --chart-4: oklch(0.68 0.15 160);
+  --chart-5: oklch(0.75 0.15 70);
 }
 
 .dark {
@@ -119,6 +148,26 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.875rem;
+    font-weight: 600;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
